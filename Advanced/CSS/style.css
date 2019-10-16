@@ -15,4 +15,9 @@ header, footer {
     content-fit: cover;
     overflow: hidden; }
 
+.carousel-caption {
+  background-color: rgba(94, 194, 143, 0.3);
+  position: absolute;
+  top: 0px; }
+
 /*# sourceMappingURL=style.css.map */
