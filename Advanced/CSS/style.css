@@ -1,10 +1,18 @@
 header nav {
   background-color: #17918F; }
 
-.container-fluid {
-  background-color: #5EC28F; }
-
 header, footer {
   background-color: #2F4858; }
+
+.buttonShowMore {
+  background-color: #5EC28F; }
+
+#carouselExampleSlidesOnly {
+  max-height: 300px; }
+  #carouselExampleSlidesOnly .carousel-inner {
+    max-height: 300px; }
+  #carouselExampleSlidesOnly img {
+    content-fit: cover;
+    overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
