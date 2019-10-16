@@ -12,60 +12,81 @@
 
 <body>
     <header id="header">
-        <!-- header start -->
+<!-- header start -->
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand mb-0 h1" href="#">Home</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end p-0">
+        </nav>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/carousel/car-937414_640.png" class="d-block mx-auto" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>AwsomeCars</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/carousel/chevrolet-3253172_640 (2).png" class="d-block mx-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/carousel/ford-mustang-146580_640.png" class="d-block mx-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
                 </div>
             </div>
         </div>
-<!--         <h1 class="text-center text-light font-weight-normal py-3">AwsomeCars</h1> -->
-        <nav class="navbar navbar-dark">
-            <a class="navbar-brand mb-0 h1" href="#">Home</a>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex justify-content-end">
-        </nav>
-    </header><!-- header end -->
+    </header><!-- header end--->
     <main>
         <!--main start--->
         <!--category card-->
-        <div class="row">
-            <div class="card col-12 offset-1 col-md-5 offset-md-0 mx-auto" style="width: 18rem;">
-                <img src="img/carCateory2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Cars</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
-                    <a href="#" class="btn buttonShowMore">Show More</a>
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="card col-12 offset-1 col-md-5 offset-md-0 mx-auto" style="width: 18rem;">
+                    <img src="img/carCateory2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cars</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+                        <button class="btn buttonShowMore" id="btnCars">Show More</button>
+                    </div>
+                </div>
+                <div class="card col-12 offset-1 col-md-5 offset-md-0 mx-auto" style="width: 18rem;">
+                    <img src="img/truck1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Truck</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+                        <button class="btn buttonShowMore" id="btnTruck">Show More</button>
+                    </div>
                 </div>
             </div>
-            <div class="card col-12 offset-1 col-md-5 offset-md-0 mx-auto" style="width: 18rem;">
-                <img src="img/truck1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Truck</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
-                    <a href="#" class="btn buttonShowMore">Show More</a>
-                </div>
+            <!--cards for vehicles-->
+            <div class="row mt-4" id="carsCard"><!-- content from JS--->
+                <!-- <div class="card col-10 offset-1 col-md-3 offset-md-0 mx-auto p-0" style="width: 18rem;">
+                    <img src="img/fiat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${model}</h5>
+                        <p class="card-text">${description}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item font-weight-bold">PS: <span class="font-weight-normal">${ps}</span></li>
+                        <li class="list-group-item font-weight-bold">Kilometer: <span class="font-weight-normal">${kilometer}</span></li>
+                        <li class="list-group-item font-weight-bold">Year: <span class="font-weight-normal">${year}</span></li>
+                        <li class="list-group-item font-weight-bold">Seats: <span class="font-weight-normal">${seats}</span></li>
+                    </ul>
+                    <div class="card-body">
+                        <button class="btn buttonShowMore">Price</button>
+                        <span id="printPrice" class="ml-4">€ 120</span>
+                    </div>
+                </div> -->
             </div>
         </div>
-        <!--cards for vehicles-->
-        <div class="row" id="carsCard">
-
-        </div>
+        <!--container-fluid end-->
     </main>
-    <footer class="py-3">
+    <footer class="py-2 mt-4">
         <!-- footer start -->
-        <h1 class="text-center text-light font-weight-normal">AwsomeCars</h1>
+        <h3 class="text-center text-light font-weight-normal">AwesomeCars</h3>
+        <h5 class="text-center text-light font-weight-normal">&copy; 2019</h5>
     </footer><!-- footer end -->
     <!--JQuery<--->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -73,8 +94,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--bootstrap.js--->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--myJS-->
-    <script src="JS/vehicles.js" charset="utf-8"></script>
+    <!--JS Version Babsi-->
+    <script src="JS/script.js" charset="utf-8"></script>
+    <!--JS Version Philipp-->
+    <!--<script src="JS/vehicles.js" charset="utf-8"></script> -->
 </body>
 
 </html>

@@ -16,8 +16,9 @@ header, footer {
     overflow: hidden; }
 
 .carousel-caption {
-  background-color: rgba(94, 194, 143, 0.3);
+  background-color: rgba(47, 72, 88, 0.4);
   position: absolute;
-  top: 0px; }
+  top: 0px;
+  padding-top: 10%; }
 
 /*# sourceMappingURL=style.css.map */
