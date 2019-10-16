@@ -56,7 +56,7 @@ var array = [Porsche, Chevi, Käfer, Trabi, Fiat, Ford, Dodge, VW];
 for (let cal of array){
 	if(cal.motor != ""){
 // with this loop you can target all objects of the array that have a motor property (!= "" means: if its not empty) in this case it targets the class: VehicleMotor
-		document.getElementById("<carsCard></carsCard>").innerHTML+=`
+		document.getElementById("carsCard").innerHTML+=`
 		<div class="carCont">
 			<div class="col-md-4">
 				<div class="imgCont">
@@ -78,7 +78,7 @@ for (let cal of array){
 	}
 // with this loop you can target all objects of the array that have a truck property (!= "" means: if its not empty) in this case it targets the class: VehicleTruck
 	else if(cal.truck !=""){
-		document.getElementById("<carsCard></carsCard>").innerHTML+=`
+		document.getElementById("carsCard").innerHTML+=`
 		<div class="carCont">
 			<div class="col-md-4">
 				<div class="imgCont">
@@ -99,7 +99,7 @@ for (let cal of array){
 	}
 // this statement will target the parant class Vehicle
 	else {
-		document.getElementById("<carsCard></carsCard>").innerHTML+=`
+		document.getElementById("carsCard").innerHTML+=`
 		<div class="carCont">
 			<div class="col-md-4">
 				<div class="imgCont">
